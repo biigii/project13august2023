@@ -1,0 +1,15 @@
+/* <input type="text"> */
+
+/* [type="text"] {
+  background-color: #f22;
+} */
+
+.my-random-class {
+  border: 2px solid;
+  padding: 10px;
+}
+
+.this-class-gets-added-via-js {
+  background-color: rgb(155, 241, 50);
+  height: 100vh;
+}
