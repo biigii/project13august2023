@@ -1,32 +1,36 @@
-// document.querySelector('h1')
-// document.querySelector('#heading')
-// document.querySelector('.header')
-// document.querySelector('h1.header')
 
-// document.querySelector("[type='text']")
 
-const h1 = document.querySelector('h1')
-h1.style.color = 'red'
-h1.style.fontSize = '4em'
-h1.style.textAlign = 'center'
+console.log('hello world')
+// function or methods
 
-const myForm = document.querySelector('form')
-myForm.setAttribute('id','form')
-myForm.setAttribute('class','my-random-class')
+function myFirstFunction() {
+  console.log('this text is form inside function')
+}
 
-// const body = document.body
-const body = document.querySelector('body')
-// body.classList = 'this-class-gets-added-via-js'
-// body.classList.add('this-class-gets-added-via-js')
+// this function updates the styling of my main heading
+function changeMyHeading() {
+  const h1 = document.querySelector('h1')
+  h1.style.color = '#f11'
+  h1.style.backgroundColor = '#ddd'
+  myFirstFunction()
+}
 
-// h1.classList.remove('heading')
+changeMyHeading()
 
-const h2 = document.createElement('h2')
-h2.innerHTML = 'you just created this in javascript';
-h2.classList.add('subheading')
-h2.style.textDecoration = 'underline'
-document.body.appendChild(h2)
+function addNewElement() {
+  const element = document.createElement('p');
+  // element.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequatur!'
+  element.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequatur!'
+  document.body.appendChild(element)
+}
 
-const formButton = document.querySelector('[type="submit"]')
-formButton.style.setProperty('background-color','red')
-// formButton.style.backgroundColor = 'red'
+addNewElement()
+
+function addInputToForm() {
+  const form = document.querySelector('form');
+  const input = document.createElement('input')
+  input.setAttribute('type','color')
+  form.appendChild(input)
+}
+
+addInputToForm()
