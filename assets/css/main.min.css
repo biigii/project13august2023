@@ -1,1 +1,1 @@
-table{border-collapse:collapse}table th,table td{border:1px solid}table th{background-color:#eee}/*# sourceMappingURL=main.min.css.map */
+*{margin:0}main{height:100vh;background-color:#ddd;display:grid;row-gap:20px;-moz-column-gap:2px;column-gap:2px;grid-template-columns:repeat(3, 200px);grid-template-rows:1fr 100px 200px}div{background-color:#b08b07;color:#fff;font-size:2em;display:flex;justify-content:center;align-items:center}/*# sourceMappingURL=main.min.css.map */
